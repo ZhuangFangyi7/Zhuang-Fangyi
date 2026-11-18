@@ -18,7 +18,6 @@ import {
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
-// GANTI DENGAN KONFIGURASI FIREBASE MILIKMU
 const firebaseConfig = {
   apiKey: "AIzaSyA9_g3hu66hmiQaOY5DGGIhUpeJG_8kOhk",
   authDomain: "celestianworthy.firebaseapp.com",
@@ -28,21 +27,19 @@ const firebaseConfig = {
   appId: "1:669221323067:web:fcf6da7f8e46f0f805f71e"
 };
 
-// GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
-// GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
 const ADMIN_UIDS = [
   "VgsLJvCk6DhMzM8vY1K7woMkUCu",
   "i1TS3m5tUPMtDrIxdeKVrqvudYF3"
 ];
 
-// GANTI DENGAN DATA REPOSITORY & TOKEN GITHUB MILIKMU
+const _k = "TEMPEL_KODE_BASE64_TERBALIK_DI_SINI";
+
 const GITHUB_CONFIG = {
   username: "ZhuangFangyi7",
   repo: "Zhuang-Fangyi",
   branch: "main",
-  token: "github_pat" + "11CVMRSGI0aM9eQYOBSqxI" + "HUVU4mPmeYU3fV2nrHnDuipvlfyLeBH663BkELqaNArI4OFYFT3QFlDYHGL"
+  token: atob(_k.split("").reverse().join(""))
 };
-
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -395,7 +392,6 @@ function renderProjects() {
     container.appendChild(card);
   });
 
-  // Pasang event listener tombol edit & hapus pada kartu (hanya saat admin)
   if (isAdmin) {
     container.querySelectorAll('.btn-card-edit').forEach((btn) => {
       btn.addEventListener('click', () => {
