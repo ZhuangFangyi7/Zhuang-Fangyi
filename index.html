@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhuang Fangyi | Editorial Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bingkai Wallpaper dengan Opacity yang Dapat Diedit -->
+  <div class="wallpaper-wrapper">
+    <div id="wallpaper-layer" class="wallpaper-layer"></div>
+    <div id="wallpaper-tint" class="wallpaper-tint"></div>
+    <div class="wallpaper-grid"></div>
+    <button type="button" class="wp-quick-btn admin-only" id="wp-quick-edit-btn" title="Edit Wallpaper">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+        <polyline points="21 15 16 10 5 21"></polyline>
+      </svg>
+      <span>Edit Wallpaper</span>
+    </button>
+  </div>
+
+  <!-- Garis Lengkung Dekoratif Gaya Poster -->
+  <svg class="swoosh-svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
+    <path d="M -50,240 Q 450,40 1500,120" fill="none" stroke="#00ff88" stroke-width="3" opacity="0.45"/>
+    <path d="M -50,255 Q 460,55 1500,145" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.25"/>
+    <path d="M -50,740 Q 820,660 1490,340" fill="none" stroke="#00ff88" stroke-width="3.5" opacity="0.4"/>
+    <path d="M -50,758 Q 830,680 1490,365" fill="none" stroke="#00ff88" stroke-width="1.2" opacity="0.2"/>
+  </svg>
+
+  <!-- Kontainer Utama Majalah -->
+  <main class="magazine-container">
+
+    <!-- Header Judul Besar -->
+    <header class="editorial-header">
+      <div class="top-meta">
+        <span>EDISI ALCRAZHY // NO. 12</span>
+        <span>By ALCRAZHY</span>
+        <span>2026-11-18</span>
+      </div>
+      <div class="title-block">
+        <h1 class="main-headline">ARCHIVE</h1>
+        <span class="script-overlay">zhuang fangyi</span>
+      </div>
+      <div class="sub-badge-row">
+        <div class="badge-box">
+          <span class="badge-tag">CREATOR</span>
+          <span class="badge-name" id="header-creator-name">ZHUANG FANGYI</span>
+        </div>
+        <p class="editorial-note">
+          EKSPLORASI DESAIN DIGITAL &amp; PENGEMBANGAN WEB INTERAKTIF DENGAN ESTETIKA HIJAU NEON.
+        </p>
+      </div>
+    </header>
+
+    <!-- Navigasi Tab Utama -->
+    <nav class="editorial-tabs">
+      <button type="button" class="tab-btn active" data-tab="tab-showcase">BERANDA &amp; PROJECT</button>
+      <button type="button" class="tab-btn" data-tab="tab-profile">PROFIL PRIBADI</button>
+    </nav>
+
+    <!-- =====================================================
+         TAB 1: BERANDA & PROJECT (AVATAR UTAMA + DAFTAR PROJECT)
+         ===================================================== -->
+    <div id="tab-showcase" class="tab-pane active">
+
+      <!-- Area Tengah: Avatar Utama Halaman Web -->
+      <section class="centerpiece-section">
+        <div class="vertical-jp">ネオンポートフォリオ</div>
+
+        <div class="avatar-orbit-wrapper">
+          <div class="orbit-ring ring-outer"></div>
+          <div class="orbit-ring ring-inner"></div>
+          <div class="avatar-circle" id="avatar-trigger" title="Avatar Utama">
+            <img id="avatar-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Avatar Utama" draggable="false">
+            <div class="avatar-edit-overlay admin-only">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+              <span>Edit Avatar Utama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="avatar-caption">
+          <h2 id="display-name">Zhuang Fangyi</h2>
+          <p id="display-role">Web Developer &amp; Digital Creator</p>
+          <button type="button" class="edit-avatar-pill admin-only" id="open-avatar-modal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            Edit Avatar Utama
+          </button>
+        </div>
+      </section>
+
+      <!-- Daftar Project -->
+      <section class="projects-section" id="projects-area">
+        <div class="section-bar">
+          <div class="section-title-group">
+            <span class="index-num">#01</span>
+            <h3>DAFTAR PROJECT</h3>
+          </div>
+          <div class="active-status" id="active-filter-label">Menampilkan: Semua Project</div>
+        </div>
+
+        <div id="project-list" class="project-grid">
+          <!-- Kartu project dirender lewat JS -->
+        </div>
+      </section>
+
+    </div>
+
+    <!-- =====================================================
+         TAB 2: PROFIL PRIBADI (BANNER LANDSCAPE + AVATAR PROFIL + BIO)
+         ===================================================== -->
+    <div id="tab-profile" class="tab-pane">
+      <section class="profile-card-wrapper">
+
+        <!-- Banner Landscape -->
+        <div class="profile-banner-box">
+          <img id="profile-banner-img" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=80" alt="Banner Profil" draggable="false">
+          <div class="banner-gradient-overlay"></div>
+          <button type="button" class="edit-banner-btn admin-only" id="open-profile-editor">
+            Edit Bio, Avatar &amp; Banner
+          </button>
+        </div>
+
+        <!-- Avatar Khusus Profil (Terpisah dari Avatar Utama) -->
+        <div class="profile-identity-row">
+          <div class="profile-avatar-frame" id="profile-avatar-trigger" title="Avatar Profil">
+            <img id="profile-avatar-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Avatar Profil" draggable="false">
+          </div>
+          <div class="profile-headline-info">
+            <h2 id="prof-name">Zhuang Fangyi</h2>
+            <span class="prof-handle" id="prof-handle">@zhuangfangyi</span>
+          </div>
+        </div>
+
+        <!-- Detail Bio Pribadi -->
+        <div class="profile-details-grid">
+          <div class="bio-about-box">
+            <span class="bio-label">TENTANG SAYA</span>
+            <p id="prof-bio">
+              Halo, saya Zhuang Fangyi. Saya mendalami pengembangan web interaktif, desain antarmuka modern, serta eksplorasi visual bergaya editorial.
+            </p>
+          </div>
+
+          <div class="bio-meta-box">
+            <div class="bio-item">
+              <span class="bio-key">LOKASI</span>
+              <span class="bio-val" id="prof-location">Indonesia</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-key">SEKOLAH</span>
+              <span class="bio-val" id="prof-status">Tersedia untuk Kolaborasi</span>
+            </div>
+            <div class="bio-item">
+              <span class="bio-key">KEAHLIAN/JURUSAN</span>
+              <span class="bio-val" id="prof-skills">HTML • CSS • JavaScript • UI Design</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Footer Dekoratif Majalah -->
+    <footer class="editorial-footer">
+      <div class="swatch-group">
+        <div class="swatch" style="background:#00ff88; color:#04110a;">#00FF88</div>
+        <div class="swatch" style="background:#0b2919; color:#00ff88; border:1px solid #00ff8844;">#0B2919</div>
+        <div class="swatch" style="background:#040c07; color:#7affbe; border:1px solid #00ff8844;">#040C07</div>
+      </div>
+      <div class="footer-slogan">
+        <span>ARSIP DIGITAL</span>
+        <strong>ZHUANG FANGYI // 2026</strong>
+      </div>
+      <div class="barcode-box" aria-hidden="true">
+        <div class="barcode-lines"></div>
+        <span>2026-11-18-ZF</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- =========================================================
+       MENU PENGATURAN DI KIRI BAWAH (KOTAK TERPISAH DI SEKITARNYA)
+       ========================================================= -->
+  <div class="gear-dock" id="gear-dock">
+
+    <!-- Panel Terpisah: Pencarian (Tersedia untuk Semua Pengunjung) -->
+    <div class="floating-tool-box search-box-panel" id="panel-search">
+      <div class="panel-header">
+        <span>PENCARIAN PROJECT</span>
+        <button type="button" class="close-mini" data-close="panel-search">&times;</button>
+      </div>
+      <input type="text" id="search-input" placeholder="Ketik judul atau deskripsi...">
+    </div>
+
+    <!-- Panel Terpisah: Filter (Tersedia untuk Semua Pengunjung) -->
+    <div class="floating-tool-box filter-box-panel" id="panel-filter">
+      <div class="panel-header">
+        <span>FILTER KATEGORI</span>
+        <button type="button" class="close-mini" data-close="panel-filter">&times;</button>
+      </div>
+      <div class="filter-options">
+        <button type="button" class="filter-chip active" data-filter="all">Semua</button>
+        <button type="button" class="filter-chip" data-filter="image">Gambar</button>
+        <button type="button" class="filter-chip" data-filter="file">Dokumen</button>
+        <button type="button" class="filter-chip" data-filter="text">Teks</button>
+      </div>
+    </div>
+
+    <!-- Kotak-kotak Tombol Fitur Terpisah di Sekitar Tombol Pengaturan -->
+    <button type="button" class="orbit-action-box box-add admin-only" id="btn-action-add">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+      <span>Tambah</span>
+    </button>
+
+    <button type="button" class="orbit-action-box box-edit admin-only" id="btn-action-edit">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+      </svg>
+      <span>Edit File</span>
+    </button>
+
+    <button type="button" class="orbit-action-box box-filter" id="btn-action-filter">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+      </svg>
+      <span>Filter</span>
+    </button>
+
+    <button type="button" class="orbit-action-box box-search" id="btn-action-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <span>Pencarian</span>
+    </button>
+
+    <button type="button" class="orbit-action-box box-delete admin-only" id="btn-action-delete">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+      </svg>
+      <span>Hapus</span>
+    </button>
+
+    <button type="button" class="orbit-action-box box-wallpaper admin-only" id="btn-action-wallpaper">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+        <polyline points="21 15 16 10 5 21"></polyline>
+      </svg>
+      <span>Wallpaper</span>
+    </button>
+
+    <!-- Tombol Login / Logout Admin -->
+    <button type="button" class="orbit-action-box box-auth" id="btn-action-auth">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+      </svg>
+      <span id="auth-btn-label">Login Admin</span>
+    </button>
+
+    <!-- Tombol Lingkaran Pengaturan Besar di Pojok Kiri Bawah -->
+    <button type="button" class="gear-main-btn" id="gear-toggle" aria-label="Buka Menu Pengaturan">
+      <svg class="gear-icon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- =========================================================
+       MODAL 1: TAMBAH / EDIT PROJECT
+       ========================================================= -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-form-title">Tambah Project Baru</h3>
+        <button type="button" class="modal-close" id="close-project-modal">&times;</button>
+      </div>
+      <form id="project-form">
+        <div class="form-group">
+          <label for="title">Judul Project</label>
+          <input type="text" id="title" placeholder="Contoh: Desain Poster Editorial" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Deskripsi / Teks Catatan</label>
+          <textarea id="description" rows="3" placeholder="Tuliskan detail project di sini..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image">Upload Gambar (Opsional)</label>
+          <input type="file" id="image" accept="image/*">
+          <div id="image-preview" class="preview-box"></div>
+        </div>
+        <div class="form-group">
+          <label for="file">Upload File Dokumen (Opsional)</label>
+          <input type="file" id="file">
+          <div id="file-name" class="preview-file"></div>
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn-neon" id="submit-btn">Simpan Project</button>
+          <button type="button" class="btn-ghost" id="cancel-project-btn">Batal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL 2: EDIT AVATAR UTAMA HALAMAN WEB (TERPISAH)
+       ========================================================= -->
+  <div class="modal-backdrop" id="avatar-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Edit Avatar Utama</h3>
+        <button type="button" class="modal-close" id="close-avatar-modal">&times;</button>
+      </div>
+      <form id="avatar-form">
+        <div class="avatar-preview-stage">
+          <div class="avatar-preview-circle">
+            <img id="avatar-modal-preview" src="" alt="Preview Avatar Utama">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="avatar-file-input">Ganti Foto Avatar Utama (Upload ke GitHub)</label>
+          <input type="file" id="avatar-file-input" accept="image/*">
+        </div>
+
+        <div class="form-group">
+          <label for="avatar-url-input">Atau Masukkan URL Gambar</label>
+          <input type="url" id="avatar-url-input" placeholder="https://contoh.com/foto.jpg">
+        </div>
+
+        <div class="slider-grid">
+          <div class="form-group">
+            <label>Zoom Foto: <span id="val-av-zoom">100%</span></label>
+            <input type="range" id="av-zoom" min="100" max="250" value="100">
+          </div>
+          <div class="form-group">
+            <label>Geser Horizontal (X): <span id="val-av-x">0px</span></label>
+            <input type="range" id="av-x" min="-80" max="80" value="0">
+          </div>
+          <div class="form-group">
+            <label>Geser Vertikal (Y): <span id="val-av-y">0px</span></label>
+            <input type="range" id="av-y" min="-80" max="80" value="0">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-display-name">Nama Judul Beranda</label>
+          <input type="text" id="input-display-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="input-display-role">Subjudul / Peran Beranda</label>
+          <input type="text" id="input-display-role" required>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-neon">Simpan Avatar Utama</button>
+          <button type="button" class="btn-ghost" id="reset-avatar-btn">Reset Bawaan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL 3: EDIT WALLPAPER & OPACITY
+       ========================================================= -->
+  <div class="modal-backdrop" id="wallpaper-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Edit Wallpaper Latar</h3>
+        <button type="button" class="modal-close" id="close-wallpaper-modal">&times;</button>
+      </div>
+      <form id="wallpaper-form">
+        <div class="form-group">
+          <label for="wp-file-input">Upload Gambar Wallpaper (ke GitHub)</label>
+          <input type="file" id="wp-file-input" accept="image/*">
+        </div>
+
+        <div class="form-group">
+          <label for="wp-url-input">Atau Tempel URL Wallpaper</label>
+          <input type="url" id="wp-url-input" placeholder="https://contoh.com/wallpaper.jpg">
+        </div>
+
+        <div class="slider-grid">
+          <div class="form-group">
+            <label>Opacity Wallpaper: <span id="val-wp-opacity">22%</span></label>
+            <input type="range" id="wp-opacity" min="5" max="90" value="22">
+          </div>
+          <div class="form-group">
+            <label>Tingkat Blur: <span id="val-wp-blur">0px</span></label>
+            <input type="range" id="wp-blur" min="0" max="16" value="0">
+          </div>
+          <div class="form-group">
+            <label>Skala / Zoom: <span id="val-wp-scale">100%</span></label>
+            <input type="range" id="wp-scale" min="100" max="180" value="100">
+          </div>
+          <div class="form-group">
+            <label>Posisi Horizontal (X): <span id="val-wp-x">50%</span></label>
+            <input type="range" id="wp-x" min="0" max="100" value="50">
+          </div>
+          <div class="form-group">
+            <label>Posisi Vertikal (Y): <span id="val-wp-y">50%</span></label>
+            <input type="range" id="wp-y" min="0" max="100" value="50">
+          </div>
+        </div>
+
+        <div class="form-group checkbox-row">
+          <input type="checkbox" id="wp-neon-tint" checked>
+          <label for="wp-neon-tint">Aktifkan Nuansa Filter Hijau Neon</label>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-neon">Terapkan &amp; Simpan</button>
+          <button type="button" class="btn-ghost" id="reset-wallpaper-btn">Reset Bawaan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL 4: EDIT PROFIL PRIBADI (BANNER + AVATAR PROFIL + BIO)
+       ========================================================= -->
+  <div class="modal-backdrop" id="profile-editor-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Edit Profil Pribadi</h3>
+        <button type="button" class="modal-close" id="close-profile-editor">&times;</button>
+      </div>
+      <form id="profile-editor-form">
+        <div class="form-group">
+          <label for="prof-banner-file">Ganti Banner Landscape (Upload ke GitHub)</label>
+          <input type="file" id="prof-banner-file" accept="image/*">
+        </div>
+        <div class="form-group">
+          <label for="prof-banner-url">Atau URL Banner Landscape</label>
+          <input type="url" id="prof-banner-url" placeholder="https://contoh.com/banner-landscape.jpg">
+        </div>
+
+        <div class="form-group">
+          <label for="prof-avatar-file">Ganti Avatar Profil (Upload ke GitHub)</label>
+          <input type="file" id="prof-avatar-file" accept="image/*">
+        </div>
+        <div class="form-group">
+          <label for="prof-avatar-url">Atau URL Avatar Profil</label>
+          <input type="url" id="prof-avatar-url" placeholder="https://contoh.com/avatar-profil.jpg">
+        </div>
+
+        <div class="slider-grid">
+          <div class="form-group">
+            <label for="input-prof-name">Nama Lengkap</label>
+            <input type="text" id="input-prof-name" required>
+          </div>
+          <div class="form-group">
+            <label for="input-prof-handle">Username / Tag</label>
+            <input type="text" id="input-prof-handle" placeholder="@username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-prof-bio">Bio Singkat</label>
+          <textarea id="input-prof-bio" rows="3"></textarea>
+        </div>
+
+        <div class="slider-grid">
+          <div class="form-group">
+            <label for="input-prof-location">Lokasi</label>
+            <input type="text" id="input-prof-location">
+          </div>
+          <div class="form-group">
+            <label for="input-prof-status">Sekolah / Status</label>
+            <input type="text" id="input-prof-status">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-prof-skills">Keahlian / Jurusan</label>
+          <input type="text" id="input-prof-skills">
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-neon">Simpan Profil Pribadi</button>
+          <button type="button" class="btn-ghost" id="reset-profile-btn">Reset Bawaan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL 5: LOGIN OWNER / ADMIN
+       ========================================================= -->
+  <div class="modal-backdrop" id="login-modal">
+    <div class="modal-card" style="max-width: 380px;">
+      <div class="modal-header">
+        <h3>Login Owner / Admin</h3>
+        <button type="button" class="modal-close" id="close-login-modal">&times;</button>
+      </div>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="admin-email">Email Admin</label>
+          <input type="email" id="admin-email" placeholder="admin@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="admin-password">Kata Sandi</label>
+          <input type="password" id="admin-password" placeholder="••••••••" required>
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn-neon" id="login-submit-btn">Masuk</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notifikasi -->
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
