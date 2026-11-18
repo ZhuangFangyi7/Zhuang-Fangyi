@@ -29,15 +29,20 @@ const firebaseConfig = {
 };
 
 // GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
-const ADMIN_UID = [ "VgsLJvCk6DhMzM8vY1K7woMkUCu","i1TS3m5tUPMtDrIxdeKVrqvudYF3" ];
+// GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
+const ADMIN_UIDS = [
+  "VgsLJvCk6DhMzM8vY1K7woMkUCu",
+  "i1TS3m5tUPMtDrIxdeKVrqvudYF3"
+];
 
 // GANTI DENGAN DATA REPOSITORY & TOKEN GITHUB MILIKMU
 const GITHUB_CONFIG = {
-  username: "ZhuangFangyi7", "CelestialWorthy0",
-  repo: "portfolio-assets",
+  username: "ZhuangFangyi7",
+  repo: "Zhuang-Fangyi",
   branch: "main",
-  token: "github_pat_11CVMRSGI0MJQckwNrNbnr" + "o9SFA9sOXXu63QANVvudhSosjtmoklgWwG8VNsca2gPXXYWU5WVehWCuZ1x";
+  token: "github_pat_11CVMRSGI0MJQckwNrNbnr" + "o9SFA9sOXXu63QANVvudhSosjtmoklgWwG8VNsca2gPXXYWU5WVehWCuZ1x"
 };
+
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
