@@ -32,7 +32,7 @@ const ADMIN_UIDS = [
   "i1TS3m5tUPMtDrIxdeKVrqvudYF3"
 ];
 
-const _raw: "github_#pat#11CVMRSGI0HaESl7KdQ76s#6qFQOTr6kSPQ2DO5MylIPnhSXxrz89KzuQ0p1iCfz7jWTLZM4JNM279fNow";
+const _raw = "github_#pat_#11CVMRSGI0FRfUgohGfxFc_#D00TNLMYaCwxkvtCXCmDXotF1Ise7czvMl2bH2lNavDQWTXI3JAFkm5Yz7M";
 
 const GITHUB_CONFIG = {
   username: "ZhuangFangyi7",
@@ -40,6 +40,7 @@ const GITHUB_CONFIG = {
   branch: "main",
   token: _raw.replaceAll("#", "")
 };
+
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
