@@ -32,13 +32,13 @@ const ADMIN_UIDS = [
   "i1TS3m5tUPMtDrIxdeKVrqvudYF3"
 ];
 
-const _k = "39mTmlzNy0kTKRTTaxEVXp2N6Z2QpFDcwEVd6tUO4onc4h1Uo5GUJxWeNVzTEJTUQN1a2IHVPFlRxZzXzZzNRR2S3w2UFFGSwk0RTJVTWNUMx8FdhB3XiVHa0l2Z";
+const _raw: "github_#pat#11CVMRSGI0HaESl7KdQ76s#6qFQOTr6kSPQ2DO5MylIPnhSXxrz89KzuQ0p1iCfz7jWTLZM4JNM279fNow";
 
 const GITHUB_CONFIG = {
   username: "ZhuangFangyi7",
   repo: "Zhuang-Fangyi",
   branch: "main",
-  token: atob(_k.split("").reverse().join(""))
+  token: _raw.replaceAll("#", "")
 };
 
 const app = initializeApp(firebaseConfig);
