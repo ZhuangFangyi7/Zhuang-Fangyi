@@ -534,6 +534,19 @@
   <!-- Toast Notifikasi -->
   <div id="toast" class="toast"></div>
 
+  <div id="debug-banner" style="position:fixed; top:0; left:0; right:0; background:#ff0055; color:#fff; font-size:12px; padding:8px; z-index:99999; font-family:monospace;">
+    STATUS: Menunggu script.js...
+  </div>
+  <script>
+    window.addEventListener('error', function(e) {
+      document.getElementById('debug-banner').textContent = 'ERR: ' + e.message + ' (baris ' + e.lineno + ')';
+    });
+    window.addEventListener('unhandledrejection', function(e) {
+      document.getElementById('debug-banner').textContent = 'MODUL ERR: ' + (e.reason && e.reason.message ? e.reason.message : e.reason);
+    });
+  </script>
+  <script type="module" src="script.js"></script>
+
   <script type="module" src="script.js"></script>
 </body>
 </html>
