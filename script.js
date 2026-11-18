@@ -20,12 +20,12 @@ import {
 
 // GANTI DENGAN KONFIGURASI FIREBASE MILIKMU
 const firebaseConfig = {
-  apiKey: "ISI_API_KEY_KAMU",
-  authDomain: "ISI_PROJECT_ID.firebaseapp.com",
-  projectId: "ISI_PROJECT_ID",
-  storageBucket: "ISI_PROJECT_ID.appspot.com",
-  messagingSenderId: "ISI_SENDER_ID",
-  appId: "ISI_APP_ID"
+  apiKey: "AIzaSyA9_g3hu66hmiQaOY5DGGIhUpeJG_8kOhk",
+  authDomain: "celestianworthy.firebaseapp.com",
+  projectId: "celestianworthy",
+  storageBucket: "celestianworthy.firebasestorage.app",
+  messagingSenderId: "669221323067",
+  appId: "1:669221323067:web:fcf6da7f8e46f0f805f71e"
 };
 
 // GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
