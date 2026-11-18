@@ -29,14 +29,14 @@ const firebaseConfig = {
 };
 
 // GANTI DENGAN UID AKUN ADMIN DARI FIREBASE AUTHENTICATION
-const ADMIN_UID = "TEMPEL_UID_ADMIN_KAMU_DI_SINI";
+const ADMIN_UID = "VgsLJvCk6DhMzM8vY1K7woMkUCu","i1TS3m5tUPMtDrIxdeKVrqvudYF3";
 
 // GANTI DENGAN DATA REPOSITORY & TOKEN GITHUB MILIKMU
 const GITHUB_CONFIG = {
-  username: "USERNAME_GITHUB_KAMU",
+  username: "ZhuangFangyi7", "CelestialWorthy0",
   repo: "portfolio-assets",
   branch: "main",
-  token: "TOKEN_GITHUB_KAMU"
+  token: "github_pat_11CVMRSGI0MJQckwNrNbnr" + "o9SFA9sOXXu63QANVvudhSosjtmoklgWwG8VNsca2gPXXYWU5WVehWCuZ1x"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -217,7 +217,7 @@ async function loadAllFromCloud() {
 // AUTENTIKASI OWNER / ADMIN
 // =========================================================
 onAuthStateChanged(auth, (user) => {
-  if (user && user.uid === ADMIN_UID) {
+  if (user && ADMIN_UIDS.includes(user.uid)) {
     isAdmin = true;
     document.body.classList.add('is-admin');
     document.getElementById('auth-btn-label').textContent = 'Logout';
@@ -254,7 +254,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
   try {
     const cred = await signInWithEmailAndPassword(auth, email, password);
-    if (cred.user.uid !== ADMIN_UID) {
+    if (!ADMIN_UIDS.includes(cred.user.uid)) {
       await signOut(auth);
       throw new Error('Akun ini bukan pemilik (Admin) website.');
     }
