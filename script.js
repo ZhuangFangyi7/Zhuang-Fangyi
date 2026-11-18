@@ -1,3 +1,5 @@
+document.getElementById('debug-banner').textContent = 'STATUS: File script.js terbaca! Mengecek kode...';
+
 // =========================================================
 // 1. IMPORT & KONFIGURASI FIREBASE + GITHUB STORAGE
 // =========================================================
