@@ -32,7 +32,7 @@ const ADMIN_UIDS = [
   "i1TS3m5tUPMtDrIxdeKVrqvudYF3"
 ];
 
-const _k = "TEMPEL_KODE_BASE64_TERBALIK_DI_SINI";
+const _k = "39mTmlzNy0kTKRTTaxEVXp2N6Z2QpFDcwEVd6tUO4onc4h1Uo5GUJxWeNVzTEJTUQN1a2IHVPFlRxZzXzZzNRR2S3w2UFFGSwk0RTJVTWNUMx8FdhB3XiVHa0l2Z";
 
 const GITHUB_CONFIG = {
   username: "ZhuangFangyi7",
