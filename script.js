@@ -43,12 +43,13 @@ const GITHUB_CONFIG = {
   token: _raw.replaceAll("#", "")
 };
 
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
 let isAdmin = false;
+
+try {
 
 // =========================================================
 // FUNGSI UPLOAD FILE & GAMBAR KE GITHUB STORAGE
@@ -969,3 +970,6 @@ applyWallpaperUI();
 applyProfileTabUI();
 renderProjects();
 loadAllFromCloud();
+} catch (err) {
+  document.getElementById('debug-banner').textContent = 'ERROR ASLI: ' + err.message;
+}
