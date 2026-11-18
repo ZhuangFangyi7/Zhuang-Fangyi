@@ -40,7 +40,7 @@ const GITHUB_CONFIG = {
   username: "ZhuangFangyi7",
   repo: "Zhuang-Fangyi",
   branch: "main",
-  token: "github_pat" + "11CVMRSGI0eLoleZwhnLU0" + "H554t6ydg6WRu072HXEYR5q6lkQBIJurIp2NCb21vz52PGT7YM6oNv7kLCE"
+  token: "github_pat" + "11CVMRSGI0aM9eQYOBSqxI" + "HUVU4mPmeYU3fV2nrHnDuipvlfyLeBH663BkELqaNArI4OFYFT3QFlDYHGL"
 };
 
 
